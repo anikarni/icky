@@ -7,18 +7,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
+body {
   background-image: url('./background-1.jpg');
   min-height: 100%;
   background-position: top;
   background-size: cover;
+	background-attachment: fixed;
+}
+body,h1 { font-family: "Raleway", sans-serif; }
+body,html {height: 100%}
+@media (max-width: 480px) {
+.w3-jumbo { font-size: 9vw !important; }
+.w3-medium { font-size: 3.5vw !important; }
+.w3-small { font-size: 2vw !important; }
+}
+.w3-display-container {
+	min-height: 100%;
 }
 .w3-button {
 	border-style: solid;
 	border-color: white;
 	background-color: #fb3b6f;
+	margin-bottom: 10px;
 }
 .w3-button:hover {
 	background-color: white !important;
@@ -27,7 +37,7 @@ body, html {height: 100%}
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div class="w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top w3-center">Icky's First Website</h1>
     <hr class="w3-border-white" style="margin:auto;width:40%">
@@ -43,14 +53,14 @@ body, html {height: 100%}
 			mega importante vida da Anike e Justin. A gente tá uma bola de nervos, então seu
 			apoio e carinho é nossa ancora!
 		</p>
-		<p class="w3-center">
+		<div class="w3-center w3-medium">
 			<a target="_blank" href="https://www.kudoboard.com/boards/gAsekpxn" class="w3-button">Share your love/words of wisdom!</a>
 			<a target="_blank" href="https://www.babylist.com/baby-registry-anike-justin" class="w3-button">Registry</a>
-		</p>
-		<p class="w3-center">
+		</div>
+		<div class="w3-center w3-medium">
 			<a target="_blank" href="https://doodle.com/meeting/participate/id/aANRJo3b" class="w3-button">Philly baby shower</a>
 			<a target="_blank" href="https://doodle.com/meeting/participate/id/eXLyjA5e" class="w3-button">NYC baby shower</a>
-		</p>
+		</div>
   </div>
   <div class="w3-small w3-display-bottomleft w3-padding-large">
     Photo by <a href="https://unsplash.com/@vicko">Vicko Mozara</a> on <a href="https://unsplash.com/backgrounds/colors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
